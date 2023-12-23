@@ -4,28 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio JS</title>
+    <title>Verificador de Idade</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 
 
 
-<body onload="carregar()">
+<body>
     <header>
-        <h1>HORA DO DIA</h1>
+        <h1>Verificador de idade</h1>
     </header>
     <section>
-        <div id="msg">
-
+        <div>
+            <p>Ano de nascimento:
+                <input type="number" id="txtano" min="0">
+            </p>
+            <p>
+                sexo:
+                <input type="radio" name="radsex" id="masc">
+                <label for="masc">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="verificar" onclick="verificar()">
+            </p>
         </div>
 
-        <div id="foto">
-            <img id="imagem" src="img/manha.png" alt="foto da manhã">
-
-        </div>
-        <div id="texto">
-
+        <div id="result">
+            Preencha os dados acima para ver o resultado!
         </div>
     </section>
 
