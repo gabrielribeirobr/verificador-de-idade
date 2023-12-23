@@ -1,19 +1,13 @@
-function carregar() {
-    var msg = window.document.getElementById('msg');
-    var img = window.document.getElementById('imagem');
-    var texto = window.document.getElementById('texto');
+function verificar() {
     var data = new Date();
-    var hora = data.getHours();
-    msg.innerHTML = `Agora são ${hora} horas`;
+    var ano = data.getFullYear();
+    var fano = window.document.getElementById('txtano');
+    var result = window.document.getElementById('result');
 
-    if (hora >= 0 && hora < 12) {
-        img.src = 'img/manha.png';
-        texto.innerHTML = `Bom dia!`;
-    } else if (hora >= 12 && hora < 18) {
-        img.src = 'img/tarde.png';
-        texto.innerHTML = `Boa Tarde!`;
+    if (fano.value.length == 0 || fano.value > ano) {
+        window.alert('[ERRO] Verifique os dados e tente novamente');
+
     } else {
-        img.src = 'img/noite.png';
-        texto.innerHTML = `Boa Noite!`;
+        window.alert('Tudo OK');
     }
 }
