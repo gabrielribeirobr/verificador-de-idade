@@ -1,11 +1,23 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
 body {
-    background-color: blue;
+    align-items: center;
+    background-color: rgb(77, 151, 235);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
     text-align: center;
     color: white;
+    margin: 50px;
+}
+
+h1 {
+    font-size: 32px;
+    gap: 20px;
 }
 
 #msg {
@@ -23,6 +35,8 @@ div {
 }
 
 section {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     background-color: white;
     padding: 15px;

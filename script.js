@@ -45,7 +45,7 @@ function verificar() {
             }
         }
         result.style.textAlign = 'center';
-        result.innerHTML = `Detectamos ${genero} com ${idade}`;
+        result.innerHTML = `Detectamos ${genero} com ${idade} anos`;
         result.appendChild(img);
     }
 }
